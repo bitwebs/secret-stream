@@ -1,9 +1,9 @@
-# @hyperswarm/secret-stream
+# @web4/secret-stream
 
 Secret stream backed by Noise and libsodium's secretstream
 
 ```
-npm install @hyperswarm/secret-stream
+npm install @web4/secret-stream
 ```
 
 ## Usage
@@ -11,7 +11,7 @@ npm install @hyperswarm/secret-stream
 You can either make a secret stream from an existing transport stream.
 
 ``` js
-const SecretStream = require('@hyperswarm/secret-stream')
+const SecretStream = require('@web4/secret-stream')
 
 const a = new SecretStream(true, tcpClientStream)
 const b = new SecretStream(false, tcpServerStream)

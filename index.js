@@ -13,7 +13,7 @@ const NS = slab.subarray(0, 32)
 const NS_INITIATOR = slab.subarray(32, 64)
 const NS_RESPONDER = slab.subarray(64, 96)
 
-sodium.crypto_generichash(NS, b4a.from('hyperswarm/secret-stream'))
+sodium.crypto_generichash(NS, b4a.from('@web4/secret-stream'))
 sodium.crypto_generichash(NS_INITIATOR, b4a.from([0]), NS)
 sodium.crypto_generichash(NS_RESPONDER, b4a.from([1]), NS)
 
